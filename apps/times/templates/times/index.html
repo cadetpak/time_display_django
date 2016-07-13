@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>Time Display</title>
+		{% load staticfiles %}
+		<link rel="stylesheet" href="{% static 'times/style.css' %}">
+	</head>
+	<body>
+		<div id="header">
+			<p>The current time and date:</p>
+		</div>
+		<div id="time">
+			{{ time | date:"M d, Y" }}
+			<br>
+			{{ time | time }}
+		</div>
+
+
+	</body>
+</html>
